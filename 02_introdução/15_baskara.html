@@ -1,0 +1,45 @@
+<script>
+
+var a = Number(prompt("informe o valor de 'a'"))
+var b = Number(prompt("informe o valor de 'b'"))
+var c = Number(prompt("informe o valor de 'c'"))
+var coeficiente1;
+var coeficiente2;
+
+var valorDelta = (b*b) - 4 * a *c;
+document.write(`valor delta => ` + valorDelta + "<br/>")
+if (valorDelta < 0){
+    document.write(` Não existe raizes para delta negativo`)
+}else{
+    document.write(` raizes diferentes para delta positivo`)
+    const baskaravalor0 = (-b+ Math.sqrt(valorDelta)/2*a)
+    const baskaravalor1 = (- b - Math.sqrt(valorDelta)/2*a)
+    document.write(`<br>x'=${baskaravalor0}`);
+    document.write(`<br>x"=${baskaravalor1}`);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</script>

@@ -1,0 +1,20 @@
+<script>
+// Recebe a média anual do aluno, a quantidade de faltas e o número de aulas ministradas na disciplina. Se o aluno tiver mais de 25% de faltas, está automaticamente reprovado por faltas (RF).  Se tiver média abaixo de 7.0, porém com frequência igual ou superior a 75%, está no Exame Final (EF). Se tiver média acima de 7.0 e frequência igual ou superior a 75% está aprovado (AP). Informe a situação do aluno.
+
+//entrada 
+ 
+const media = Number(prompt("Informe a media do aluno"))
+const faltas = Number(prompt("Informe a quantia de faltas"))
+const aulas = Number(prompt("Informe a quantia de aulas ministradas"))
+
+if (media <= 7) {
+    document.write(`Reprovado por Nota baixa`)
+}else if (aulas < 75 ){
+    document.write(`Reprovado por faltas`)
+}
+else{
+    document.write(`O aluno passou de ano`)
+}
+
+
+</script>
